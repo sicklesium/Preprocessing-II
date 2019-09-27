@@ -1,24 +1,66 @@
 .home {
 
+  @media @mobile {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .header {
+
+    .header-img {
+      width: 50vw;
+      border-top: 2px dashed @navigation-border;
+      margin-bottom: 3%;
+      padding-left: 10%;
+      padding-right: 10%;
+      margin-left: -10%;
+
+      @media @mobile {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    p {
+      padding-bottom: 3%;
+      border-bottom: 2px dashed @navigation-border;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
@@ -26,6 +68,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +88,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    }
+
     img {
       border-radius: 10px;
     }
@@ -53,9 +103,75 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
+
+      .btn {
+        padding: 10px 40px;
+        border-radius: 10px;
+        background-color: @button-bg;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: all 500ms ease-in-out;
+
+        @media @mobile {
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: darken(@button-bg, 10%);
+        }
+      }
     }
+  }
+
+  .contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px dashed @navigation-border;
+
+    input[type=text], input[type=email], input[type=number], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  input[type=submit] {
+      background-color: @button-bg;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: all 500ms ease-in-out;
+
+      &:hover {
+        background-color: darken(@button-bg, 10%);
+      }
+  }
+
   }
 }// home

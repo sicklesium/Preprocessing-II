@@ -1,1 +1,43 @@
 // Navigation Styles here
+
+.nav-bar {
+  .flexed(space-between, center);
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  @media @mobile {
+    .flexed (space-between, center);
+    flex-direction: column;
+  }
+
+  .fun-bus {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4rem;
+  }
+
+  .navi {
+    .flexed(space-between, center);
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 1vw;
+      font-size: 1.7rem;
+      color: @font-color;
+      cursor: pointer;
+      transition: all 1s ease-in-out;
+
+      &:hover {
+        color: lighten(@font-color, 50%);
+      }
+
+      @media @mobile {
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+    }
+  }
+}//nav-bar

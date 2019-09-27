@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -16,14 +18,30 @@
 
 <body>
 
-  
-     
   <div class="container home">
-   
+
+    <div class="nav-bar">
+      <div class="fun-bus">Fun Bus</div>
+      <nav class="navi">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header-img">
+        <img src="img/fun-bus.jpg">
+      </div>
+      <h2>Welcome to Fun Bus!</h2>
+      <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+    </header>
+
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p>
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
       <div class="img-content">
@@ -36,10 +54,10 @@
       </div>
       <div class="text-content">
         <h2>Adventure Awaits</h2>
-        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p> 
+        <p>Adventure webdesign pretty design design, excursion cute WordPress blogger design webdesign adventure. Pretty simple traveling fun WordPress wanderlust darn simple organized.</p>
         <p>Expedition colorful design simple excursion blogger blogger design WordPress design, design organized website theme.</p>
       </div>
-     
+
     </section>
     <section class="content-destination">
       <h2>Pick Your Destination</h2>
@@ -51,18 +69,47 @@
       <div class="destination">
         <h4>Fun In The Sun</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Mountain Excursion</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
       <div class="destination">
         <h4>Island Getaway</h4>
         <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
-        <div class="btn">Sign Me Up!</div>
+        <button class="btn">Sign Me Up!</button>
       </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Select your package today!</h2>
+
+      <form action="">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name...?">
+
+        <label for="email">Contact Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email...?">
+
+        <label for="phone">Contact Phone Number</label>
+        <input type="number" id="phone" name="phone" placeholder="Your number...?">
+
+        <label for="package">Select Your Package</label>
+        <select id="package" name="package">
+          <option value="sun">Fun in the Sun</option>
+          <option value="mountain">Mountain Excursion</option>
+          <option value="island">Island Getaway</option>
+        </select>
+
+        <label for="special">Special Instructions</label>
+        <textarea id="special" name="special" placeholder="Anything we should know about...?" style="height:200px;"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
     </section>
   </div><!-- container -->
 
