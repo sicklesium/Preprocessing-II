@@ -5,6 +5,11 @@
   margin-top: 2%;
   margin-bottom: 2%;
 
+  @media @mobile {
+    .flexed (space-between, center);
+    flex-direction: column;
+  }
+
   .fun-bus {
     font-family: 'Indie Flower', cursive;
     font-size: 4rem;
@@ -23,6 +28,11 @@
 
       &:hover {
         color: lighten(@font-color, 50%);
+      }
+
+      @media @mobile {
+        padding-left: 3%;
+        padding-right: 3%;
       }
     }
   }
