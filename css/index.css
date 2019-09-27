@@ -192,6 +192,11 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:500px) {
+  .nav-bar .navi {
+    width: 100%;
+  }
+}
 .nav-bar .navi a {
   text-decoration: none;
   padding: 1vw;
@@ -205,8 +210,8 @@ img {
 }
 @media (max-width:500px) {
   .nav-bar .navi a {
-    padding-left: 3%;
-    padding-right: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
 .footer {

@@ -18,6 +18,10 @@
   .navi {
     .flexed(space-between, center);
 
+    @media @mobile {
+      width: 100%;
+    }
+
     a {
       text-decoration: none;
       padding: 1vw;
@@ -31,8 +35,8 @@
       }
 
       @media @mobile {
-        padding-left: 3%;
-        padding-right: 3%;
+        margin-left: 1%;
+        margin-right: 1%;
       }
     }
   }
